@@ -83,7 +83,7 @@ VALUES (100, 'Server');
 
 /** device **/
 
-INSERT INTO device(device_id, name, mac_address, ipv4_address, type_id, vlan_id)
-VALUES (1, 'Helmut', '0001:42CB:008B', '10.1.40.103', 1, 40);
+INSERT INTO device(device_id, name, mac_address, ipv4_address, type_id, vlan_id, location_id)
+VALUES (1, 'Helmut', '0001:42CB:008B', '10.1.40.103', 1, 40, 40);
 
 #todo insert devices and connections
