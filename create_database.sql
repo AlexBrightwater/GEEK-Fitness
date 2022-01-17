@@ -27,6 +27,7 @@ CREATE TABLE device (
     ipv4_address VARCHAR(15),
     type_id INTEGER NOT NULL,
     vlan_id INTEGER,
+    location_id INTEGER,
     PRIMARY KEY  (device_id)
 );
 
@@ -43,6 +44,8 @@ ALTER TABLE device
     ADD FOREIGN KEY (type_id) REFERENCES devicetype(devicetype_id);
 ALTER TABLE device
     ADD FOREIGN KEY (vlan_id) REFERENCES vlan(vlan_id);
+ALTER TABLE device
+    ADD FOREIGN KEY (location_id) REFERENCES location(location_id);
 ALTER TABLE connections
     ADD FOREIGN KEY (device1_id) REFERENCES device(device_id) ;
 ALTER TABLE connections
