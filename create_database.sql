@@ -2,6 +2,12 @@ DROP DATABASE IF EXISTS geek_fitness;
 CREATE DATABASE IF NOT EXISTS geek_fitness;
 USE geek_fitness;
 
+CREATE TABLE location (
+    location_id INTEGER NOT NULL AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    PRIMARY KEY (location_id)
+);
+
 CREATE TABLE vlan (
     vlan_id INTEGER NOT NULL AUTO_INCREMENT,
     name VARCHAR(100) NOT NULL,

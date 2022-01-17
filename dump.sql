@@ -61,6 +61,26 @@ VALUES (99, 'Management');
 INSERT INTO vlan(vlan_id, name)
 VALUES (100, 'Server');
 
+/** location **/
+
+INSERT INTO location(location_id, name)
+VALUES (10, 'Geschaeftsfuehrung, Verwaltung und Managment');
+
+INSERT INTO location(location_id, name)
+VALUES (20, 'Finanzen');
+
+INSERT INTO location(location_id, name)
+VALUES (30, 'Lager');
+
+INSERT INTO location(location_id, name)
+VALUES (40, 'Einkauf');
+
+INSERT INTO location(location_id, name)
+VALUES (50, 'Verkauf');
+
+INSERT INTO location(location_id, name)
+VALUES (100, 'Server');
+
 /** device **/
 
 INSERT INTO device(device_id, name, mac_address, ipv4_address, type_id, vlan_id)
